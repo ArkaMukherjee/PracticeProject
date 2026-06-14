@@ -1,4 +1,4 @@
-package com.doubly.LinkedList;
+package com.circular.doubly.linkedlist;
 
 public class Node {
     Node previous;

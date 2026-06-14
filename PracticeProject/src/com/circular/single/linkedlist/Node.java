@@ -1,4 +1,4 @@
-package com.singly.linklist;
+package com.circular.single.linkedlist;
 
 public class Node {
 

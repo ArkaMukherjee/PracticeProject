@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Final/qnaV1-java-boilerplate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PracticeProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/graphQlPractice" vcs="Git" />
+  </component>
+</project>

@@ -1,4 +1,14 @@
-package com.example.libraryeventproducer.com.example.libraryeventproducer;
+package com.example.libraryeventproducer.com.example.libraryeventproducer.model;
 
-public class model {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class LibraryEvent {
+
+    private Integer libraryId;
+    private Book book;
 }

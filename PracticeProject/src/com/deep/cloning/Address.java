@@ -1,4 +1,4 @@
-package com.shallow.cloning;
+package com.deep.cloning;
 
 public class Address implements Cloneable{
     private String road;

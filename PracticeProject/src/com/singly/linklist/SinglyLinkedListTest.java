@@ -1,4 +1,4 @@
-package com.circular.single.linkedlist;
+package com.singly.linklist;
 
 public class SinglyLinkedListTest {
     public static void main(String[] args) {
@@ -7,7 +7,8 @@ public class SinglyLinkedListTest {
         s.insertAtBegining(7);
         s.insertAtBegining(2);
         s.insertAtBegining(3);
-        s.traverse();
+        s.printRecur(s.getHead());
+       /* s.traverse();
         System.out.println("\n");
         SinglyLinkedList s1= new SinglyLinkedList();
         System.out.println("Check insert at the end");
@@ -26,6 +27,8 @@ public class SinglyLinkedListTest {
         s3.insertSorted(20);
         s3.insertSorted(45);
         s3.insertSorted(2);
+        s3.insertSorted(11);
+        s3.insertSorted(13);
         System.out.println("\n");
         System.out.println("Check sorted insertion");
         s3.traverse();
@@ -37,7 +40,8 @@ public class SinglyLinkedListTest {
         System.out.println("\n");
         System.out.println("Search Element with position");
         System.out.println("Element found at position "+s3.searchElementWithRecursion(s3.getHead(),2));
-
-
+        s3.findMiddle();
+        System.out.println("Search Element in n th position from last");
+        System.out.println(s3.searchNthElementFromLast(2));*/
     }
 }

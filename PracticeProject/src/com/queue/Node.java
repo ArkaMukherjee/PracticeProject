@@ -1,4 +1,4 @@
-package com.singly.linklist;
+package com.queue;
 
 public class Node {
 

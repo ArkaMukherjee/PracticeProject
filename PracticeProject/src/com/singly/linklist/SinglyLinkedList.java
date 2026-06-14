@@ -1,4 +1,4 @@
-package com.circular.single.linkedlist;
+package com.singly.linklist;
 
 public class SinglyLinkedList {
 
@@ -91,5 +91,47 @@ public class SinglyLinkedList {
                 temp.next = temp.next.next;
             }
         }
+    }
+
+    public void findMiddle() {
+        Node fast = head;
+        Node slow = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        System.out.println("Middle node value is " + slow.data);
+    }
+
+    public int searchNthElementFromLast(int position) {
+        Node temp = head;
+        int lengthOfList = 0;
+        while (temp != null) {
+            lengthOfList++;
+            temp = temp.next;
+        }
+        int expectedPosition = lengthOfList - (position-1);
+        int count = 0;
+        Node tempo = head;
+        while (tempo != null) {
+            if (++count != expectedPosition) {
+                tempo = tempo.next;
+            } else {
+                return tempo.data;
+            }
+        }
+        return 0;
+    }
+
+
+    public void printRecur(Node head)
+    {
+        if(head==null)
+        {
+            return;
+        }
+
+        System.out.println(head.data);
+        printRecur(head.next);
     }
 }

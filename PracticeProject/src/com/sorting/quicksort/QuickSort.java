@@ -1,4 +1,4 @@
-package com.sorting.mergesort;
+package com.sorting.quicksort;
 
 public class QuickSort {
 

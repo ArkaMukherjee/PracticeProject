@@ -1,4 +1,6 @@
-package com.shallow.cloning;
+package com.deep.cloning;
+
+import javax.swing.plaf.DesktopPaneUI;
 
 public class Person implements Cloneable{
      String name;
@@ -27,6 +29,8 @@ public class Person implements Cloneable{
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        Person clonedPerson=(Person) super.clone();
+        clonedPerson.setAddress((Address) clonedPerson.getAddress().clone());
+        return clonedPerson;
     }
 }

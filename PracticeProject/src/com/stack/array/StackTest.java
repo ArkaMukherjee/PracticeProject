@@ -1,4 +1,4 @@
-package com.test.stack.using.array;
+package com.stack.array;
 
 public class StackTest {
 
